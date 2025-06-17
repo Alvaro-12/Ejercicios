@@ -100,21 +100,6 @@
     }
 
 
-    function jugar(jugada){
-    const resultado = document.getElementById('resultado5');
-
-    const opciones = {
-        piedra : "1",
-        papel : "2",
-        tijera : "3"
-
-    };
-
-    resultado.textContent = jugada;
-    }
-
-
-
 let totalRondas = 0;
 let rondaActual = 0;
 let puntajeUsuario = 0;
@@ -162,7 +147,7 @@ function jugar(eleccionUsuario) {
   const rondasRestantes = totalRondas - rondaActual;
 
   resultado.textContent += 
-`Ronda: ${rondaActual} de ${totalRondas}
+`Ronda: ${rondaActual} de ${totalRondas} 
 Tu jugada: ${eleccionUsuario}
 Computadora: ${eleccionComputadora}
 ${resultadoRonda}
