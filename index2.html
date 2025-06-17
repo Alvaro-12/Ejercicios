@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Número Par o Impar</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      padding: 30px;
+      background-color: #f0f0f0;
+    }
+    .container {
+      background: white;
+      padding: 20px;
+      border-radius: 12px;
+      max-width: 400px;
+      margin: auto;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+    input, button {
+      padding: 10px;
+      margin-top: 10px;
+      width: 100%;
+      font-size: 16px;
+    }
+    #resultado {
+      margin-top: 20px;
+      font-weight: bold;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    <h2>¿Par o Impar?</h2>
+    <input type="number" id="numero" placeholder="Ingresa un número">
+    <button onclick="verificarParidad()">Verificar</button>
+    <p id="resultado"></p>
+  </div>
+
+  <script src="2.js">
+  </script>
+
+  <div class="container">
+    <h2>Dias del mes</h2>
+    <input type="text" id="mes" placeholder="Ingresa un mes">
+    <button onclick="obtenerDias()">Comprobar</button>
+    <p id="resultado2"></p>
+
+  </div>
+
+   <div class="container">
+    <h2>Examen aprobado</h2>
+    <input type="number" id="nota" placeholder="Ingresa su nota">
+    <button onclick="evaluarNota()">Obtener nota</button>
+    <p id="resultado3"></p>
+
+  </div>
+
+   <div class="container">
+    <h2>Grupo de letras</h2>
+    <input type="text" id="letra" placeholder="Ingresa una letra">
+    <button onclick="grupo()">Ver grupo</button>
+    <p id="resultado4"></p>
+
+  </div>
+
+
+  <div class="container">
+  <h2>Piedra, Papel o Tijera</h2>
+  <input type="number" id="rondas" placeholder="Ingrese la cantidad de rondas" min="1">
+  <div class="botones">
+    <button onclick="jugar('Piedra')">Piedra</button>
+    <button onclick="jugar('Papel')">Papel</button>
+    <button onclick="jugar('Tijera')">Tijera</button>
+  </div>
+  <p id="resultado5"></p>
+</div>
+
+
+</body>
+</html>
