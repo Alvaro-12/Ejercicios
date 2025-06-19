@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Ejercicios Interactivos</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #f9f9f9;
+      margin: 0;
+      padding: 20px;
+      color: #333;
+    }
+
+    .ejercicio {
+      background-color: white;
+      border: 1px solid #ddd;
+      border-radius: 12px;
+      padding: 20px;
+      margin-bottom: 30px;
+      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+      max-width: 600px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    h1 {
+      font-size: 1.5em;
+      color: #444;
+      border-bottom: 2px solid #eee;
+      padding-bottom: 10px;
+      margin-bottom: 20px;
+    }
+
+    label {
+      font-weight: 500;
+      margin-top: 10px;
+      display: block;
+    }
+
+    input[type="text"] {
+      width: 100%;
+      padding: 10px;
+      margin-top: 5px;
+      margin-bottom: 15px;
+      border: 1px solid #ccc;
+      border-radius: 6px;
+      font-size: 1em;
+    }
+
+    button {
+      background-color: #007bff;
+      color: white;
+      border: none;
+      padding: 10px 16px;
+      border-radius: 6px;
+      font-size: 1em;
+      cursor: pointer;
+      transition: background-color 0.2s ease;
+    }
+
+    button:hover {
+      background-color: #0056b3;
+    }
+
+    #busquedaForm {
+      margin-top: 20px;
+    }
+
+    #resultado, #resultado2, #resultado3, #resultadoBusqueda {
+      margin-top: 15px;
+      font-weight: bold;
+      color: #222;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="ejercicio"> 
+    <h1>Ejercicio 1: Saludar nombres</h1>
+    <label for="nombres">Nombres:</label>
+    <input type="text" id="nombres" placeholder="Digite nombres separados">
+    <button id="btnS">Saludar</button>
+    <div id="resultado"></div>
+  </div>
+
+  <div class="ejercicio"> 
+    <h1>Ejercicio 2: Verificar el menor</h1>
+    <label for="numeros">Números:</label>
+    <input type="text" id="numeros" placeholder="Digite números separados">
+    <button id="btnN">Verificar menor</button>
+    <div id="resultado2"></div>
+  </div>
+
+  <div class="ejercicio"> 
+    <h1>Ejercicio 3: Sumar números</h1>
+    <label for="numeros2">Números a sumar:</label>
+    <input type="text" id="numeros2" placeholder="Digite numeros">
+    <button id="btnN2">Sumar números</button>
+    <div id="resultado3"></div>
+  </div>
+
+  <div class="ejercicio">
+    <h1>Ejercicio 4: Buscar valor en lista</h1>
+    <label for="valores">Ingrese valores separados por espacios:</label>
+    <input type="text" id="valores" placeholder="Digite los numeros">
+    <button onclick="confirmarValores()">Confirmar valores</button>
+
+    <div id="busquedaForm" style="display: none;">
+      <label for="buscar">Ingrese valor a buscar:</label>
+      <input type="text" id="buscar" placeholder="buscar numero">
+      <button onclick="buscarValor()">Buscar</button>
+    </div>
+
+    <p id="resultadoBusqueda"></p>
+  </div>
+
+
+    <div class="ejercicio">
+    <h1>Ejercicio 5: Buscar valor de indice en la lista</h1>
+    <label for="valoresIndice">Ingrese valores separados por espacios:</label>
+    <input type="text" id="valoresIndice" placeholder="Digite los valores">
+    <button onclick="confirmarValoresIndice()">Confirmar valores</button>
+
+    <div id="busquedaForm2" style="display: none;">
+      <label for="buscarIndice">Ingrese el indice a buscar:</label>
+      <input type="text" id="buscarIndice" placeholder="buscar numero">
+      <button onclick="buscarIndice()">Buscar valor</button>
+    </div>
+
+    <p id="resultadoIndice"></p>
+  </div>
+
+
+  <script src="ejercicios.js"></script>
+</body>
+</html>
