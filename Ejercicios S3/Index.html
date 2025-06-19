@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicios JavaScript</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 20px;
+            padding: 20px;
+        }
+
+        h1 {
+            color: #333;
+            border-bottom: 2px solid #ccc;
+            padding-bottom: 5px;
+        }
+
+        .ejercicio {
+            background-color: #fff;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            padding: 15px;
+            margin-bottom: 25px;
+            box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+        }
+
+        label,
+        input,
+        button,
+        p,
+        h2 {
+            display: block;
+            margin: 10px 0;
+        }
+
+        input {
+            padding: 5px;
+            width: 100%;
+            max-width: 300px;
+        }
+
+        button {
+            padding: 8px 16px;
+            background-color: #007bff;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #0056b3;
+        }
+
+        p,
+        h2 {
+            font-weight: bold;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="ejercicio">
+        <h1>Ejercicio 1</h1>
+        <button id="btn">Saludar</button>
+    </div>
+
+    <div class="ejercicio">
+        <h1>Ejercicio 2</h1>
+        <p id="Saludo"></p>
+    </div>
+
+    <div class="ejercicio">
+        <h1>Ejercicio 3</h1>
+        <input type="text" id="nombre" placeholder="Escribe tu nombre">
+        <button id="btn2">Enviar</button>
+        <h2 id="NombreSaludo"></h2>
+    </div>
+
+    <div class="ejercicio">
+        <h1>Ejercicio 4</h1>
+        <label for="horas">Horas trabajadas:</label>
+        <input type="number" id="horas">
+
+        <label for="coste">Coste por hora:</label>
+        <input type="number" id="coste">
+
+        <button onclick="calcularPago()">Calcular paga</button>
+        <p id="resultado"></p>
+    </div>
+
+    <div class="ejercicio">
+        <h1>Ejercicio 5</h1>
+        <label for="peso">Ingrese su peso en kg</label>
+        <input type="number" id="peso" placeholder="Peso en kg">
+
+        <label for="altura">Ingrese su altura en metros</label>
+        <input type="number" id="altura" placeholder="Altura en metros">
+
+        <button onclick="calcularIMC()">Calcular IMC</button>
+        <p id="resultadoIMC"></p>
+    </div>
+
+    <div class="ejercicio">
+        <h1>Ejercicio 6</h1>
+        <p></p>
+        <label for="N1">Ingrese un numero</label>
+        <input type="number" id="N1" placeholder="Numero entero">
+
+        <label for="N2">Ingrese un numero</label>
+        <input type="number" id="N2" placeholder="Numero entero">
+
+        <button onclick="calcular()">Calcular</button>
+        <p id="resultadoDivision"></p>
+    </div>
+
+<script src="1.js">
+</script>
+</body>
+
+</html>
